@@ -20,14 +20,23 @@
             z-index: 1;
         }
 
+        &:hover {
+            .main-banner__button {
+                background-color: $text-color;
+                color: #fff;
+            }
+        }
+
         &.light {
             color: #fff;
 
             .main-banner__button {
                 border-color: #E3BA76;
                 color: #E3BA76;
+            }
 
-                &:hover {
+            &:hover {
+                .main-banner__button {
                     background-color: #E3BA76;
                     color: #fff;
                 }

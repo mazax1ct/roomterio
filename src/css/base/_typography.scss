@@ -27,3 +27,14 @@ img {
     max-width: 100%;
     vertical-align: top;
 }
+
+h2 {
+    font-family: 'EB Garamond', Times, serif;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    @media(min-width: $hd) {
+        font-size: 52px;
+    }
+}

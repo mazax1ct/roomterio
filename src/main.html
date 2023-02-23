@@ -31,6 +31,53 @@
 
         <div class="container">
             //= template/sections-cards.html
+
+            <h2>Топ продаж / Каталог</h2>
+
+            <div class="tabs">
+                <ul class="tabs__list">
+                    <li class="tabs__list-item"><button class="tabs__button is-active" type="button" data-target="1">Мебель</button></li>
+                    <li class="tabs__list-item"><button class="tabs__button" type="button" data-target="2">Свет</button></li>
+                    <li class="tabs__list-item"><button class="tabs__button" type="button" data-target="3">Аксессуары &amp; декор</button></li>
+                </ul>
+
+                <div class="tab is-active" data-target="1">
+                    //= template/products-slider.html
+                </div>
+
+                <div class="tab" data-target="2">
+                    //= template/products-slider.html
+                </div>
+
+                <div class="tab" data-target="3">
+                    //= template/products-slider.html
+                </div>
+            </div>
+
+            <h2>Каталог новинок</h2>
+
+            <div class="tabs">
+                <ul class="tabs__list">
+                    <li class="tabs__list-item"><button class="tabs__button is-active" type="button" data-target="1">Мебель</button></li>
+                    <li class="tabs__list-item"><button class="tabs__button" type="button" data-target="2">Свет</button></li>
+                    <li class="tabs__list-item"><button class="tabs__button" type="button" data-target="3">Аксессуары &amp; декор</button></li>
+                </ul>
+
+                <div class="tab is-active" data-target="1">
+                    //= template/products-slider.html
+                </div>
+
+                <div class="tab" data-target="2">
+                    //= template/products-slider.html
+                </div>
+
+                <div class="tab" data-target="3">
+                    //= template/products-slider.html
+                </div>
+            </div>
+
+            //= template/benefits.html
+
         </div>
 
     </main>
@@ -41,6 +88,8 @@
 
     <script src="js/slick.min.js"></script>
     <script src="js/main-banner.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/products-slider.js"></script>
 
 </body>
 

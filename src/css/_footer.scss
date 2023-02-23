@@ -7,6 +7,7 @@
         text-decoration: none;
         transition: opacity 0.3s;
 
+        &:focus-within,
         &:hover {
             opacity: 0.7;
         }
@@ -144,6 +145,12 @@
         &:hover {
             opacity: 1;
         }
+
+        &:focus-within {
+            img {
+                opacity: 1;
+            }
+        }
     }
 }
 
@@ -156,6 +163,10 @@
     text-align: left;
 
     &:hover {
+        opacity: 0.7;
+    }
+
+    &:focus-within {
         opacity: 0.7;
     }
 }
@@ -273,6 +284,10 @@
         &:hover {
             filter: grayscale(0);
         }
+
+        &:focus-within {
+            filter: grayscale(0);
+        }
     }
 }
 
@@ -313,6 +328,12 @@
     }
 
     &:hover {
+        img {
+            opacity: 1;
+        }
+    }
+
+    &:focus-within {
         img {
             opacity: 1;
         }

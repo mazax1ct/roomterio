@@ -365,7 +365,7 @@
 
         &.actions {
             a {
-                color: #E3BA76;
+                color: $dark-gold-color;
             }
         }
 
@@ -400,16 +400,17 @@
         align-items: center;
         display: flex;
         font-size: 16px;
-        padding: 6px 14px;
+        padding: 14px;
         font-weight: 500;
         transition: opacity 0.3s;
         @media(min-width: $md) {
             display: inline-block;
             font-size: 14px;
-            padding: 0;
+            padding: 6px;
         }
         @media(min-width: $hd) {
-            font-size: 18px;
+            font-size: 16px;
+            padding: 6px 14px;
         }
 
         &:hover {
