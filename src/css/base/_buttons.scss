@@ -1,0 +1,45 @@
+.button {
+    align-items: center;
+    background-color: #000;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.22222;
+    min-height: 46px;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    vertical-align: top;
+    @media(min-width: $fhd) {
+        border-radius: 7px;
+        font-size: 20px;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: #989898;
+        text-decoration: none;
+    }
+
+    &.disabled,
+    &:disabled {
+        box-shadow: none;
+        background-color: #f4f4f4;
+        cursor: default;
+        pointer-events: none;
+
+        &:active,
+        &:focus,
+        &:hover {
+            box-shadow: none;
+            text-decoration: none;
+        }
+    }
+}

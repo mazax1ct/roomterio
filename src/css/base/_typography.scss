@@ -1,0 +1,29 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    color: $text-color;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a {
+    color: $text-color;
+    transition: color 0.3s;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}

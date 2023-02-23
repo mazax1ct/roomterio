@@ -1,0 +1,165 @@
+.input-label {
+    display: block;
+
+    &__error {
+        color: $error-color;
+        display: block;
+        font-size: 14px;
+        line-height: 1.1875;
+        margin-top: 9px;
+        padding-left: 26px;
+        @media(min-width: $fhd) {
+            padding-left: 34px;
+        }
+    }
+
+    &.error {
+        .input-label__text {
+            color: $error-color;
+        }
+
+        .input,
+        .textarea {
+            border-color: $error-color;
+            color: $error-color;
+
+            &::placeholder {
+                color: $error-color;
+                opacity: 1;
+            }
+
+            &::-ms-input-placeholder {
+                color: $error-color;
+                opacity: 1;
+            }
+        }
+    }
+
+    &.valid {
+        .input-label__text {
+            color: $valid-color;
+        }
+
+        .input,
+        .textarea {
+            border-color: $valid-color;
+            color: $valid-color;
+        }
+    }
+}
+
+.input,
+.textarea {
+    border: 1px solid #747474;
+    border-radius: 3px;
+    background-color: transparent;
+    color: $text-color;
+    font-size: inherit;
+    line-height: 1.33333;
+    padding: 0 26px;
+    transition: border-color 0.3s;
+    width: 100%;
+    @media(min-width: $fhd) {
+        border-radius: 15px;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    &:focus,
+    &:hover {
+        border-color: #000;
+    }
+
+    &::placeholder {
+        color: $text-color;
+        opacity: 1;
+    }
+
+    &::-ms-input-placeholder {
+        color: $text-color;
+        opacity: 1;
+    }
+
+    &:focus::placeholder {
+        color: #989898;
+        opacity: 1;
+    }
+
+    &:focus::-ms-input-placeholder {
+        color: #989898;
+        opacity: 1;
+    }
+
+    &.error {
+        border-color: $error-color;
+        color: $error-color;
+
+        &:focus {
+            border-color: $error-color;
+            color: $error-color;
+
+            &::placeholder {
+                color: $error-color;
+            }
+
+            &::-ms-input-placeholder {
+                color: $error-color;
+            }
+        }
+
+        &::placeholder {
+            color: $error-color;
+            opacity: 1;
+        }
+
+        &::-ms-input-placeholder {
+            color: $error-color;
+            opacity: 1;
+        }
+    }
+
+    &.disabled,
+    &:disabled {
+        border-color: rgba($text-color, 0.5);
+        cursor: default;
+        pointer-events: none;
+
+        &:hover {
+            border-color: rgba($text-color, 0.5);
+        }
+
+        &::placeholder {
+            color: rgba($text-color, 0.5);
+        }
+
+        &::-ms-input-placeholder {
+            color: rgba($text-color, 0.5);
+        }
+    }
+}
+
+input,
+textarea {
+    &:focus {
+        outline: 0;
+    }
+}
+
+.input {
+    height: 55px;
+    @media(min-width: $fhd) {
+        height: 66px;
+    }
+}
+
+.textarea {
+    height: 170px;
+    padding: 20px 34px;
+    resize: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

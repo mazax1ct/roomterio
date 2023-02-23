@@ -1,0 +1,11 @@
+::-moz-selection {
+    background: $link-hover-color;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: $link-hover-color;
+    color: #fff;
+    text-shadow: none;
+}
