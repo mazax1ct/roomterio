@@ -65,9 +65,10 @@
     }
 
     &__item-text {
+        color: rgba($text-color, 0.5);
         max-width: 225px;
         margin: 10px auto 0;
         font-size: 12px;
-        opacity: 0.5;
+        font-weight: 300;
     }
 }
