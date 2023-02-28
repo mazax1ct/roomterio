@@ -1,4 +1,7 @@
 .benefits {
+    background-color: rgba($text-color, 0.05);
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin-bottom: 40px;
 
     &::-webkit-scrollbar {
@@ -10,8 +13,8 @@
         margin-left: -10px;
         margin-right: -10px;
         overflow-x: auto;
-        padding-top: 4px;
-        padding-bottom: 4px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
