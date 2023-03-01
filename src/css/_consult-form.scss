@@ -30,9 +30,6 @@
         font-size: 30px;
         font-weight: 400;
         margin-bottom: 5px;
-        @media(min-width: $md) {
-            text-align: left;
-        }
         @media(min-width: $hd) {
             font-size: 40px;
         }

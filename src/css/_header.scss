@@ -21,6 +21,7 @@
         box-shadow: none;
         min-height: 124px;
         position: static;
+        padding-bottom: 0;
     }
 
     &.out {
@@ -59,6 +60,7 @@
             max-width: $container-max-width;
             padding-left: $container-horizontal-padding;
             padding-right: $container-horizontal-padding;
+            margin-bottom: 10px;
         }
     }
 

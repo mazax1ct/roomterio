@@ -28,11 +28,9 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/plugins/slick.css">
-
 </head>
 
-<body class="main-page">
+<body>
     <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
         <symbol id="burger" viewBox="0 0 24 24">
             <path
@@ -502,41 +500,25 @@
 
     <main class="content">
 
-        <div class="js-main-banner main-banner">
-            <div class="main-banner__slide">
-                <a class="main-banner__link" href="#">
-                    <picture class="main-banner__picture">
-                        <!--ресайз картинок 750*750 1500*1500 1920*750 3840*1500-->
-                        <source srcset="images/content/banner.jpg, images/content/banner@2x.jpg 2x" media="(min-width: 768px)">
-                        <img src="images/content/banner_mob.jpg" srcset="images/content/banner_mob@2x.jpg 2x" alt="">
-                    </picture>
-                    <div class="main-banner__container">
-                        <p class="main-banner__title">Заголовок слайда</p>
-                        <p class="main-banner__text">Небольшой текст для слайда, чтобы было понятно о чём идёт речь...</p>
-                        <p><span class="main-banner__button">Подробнее</span></p>
-                    </div>
-                </a>
-            </div>
-            <div class="main-banner__slide">
-                <a class="main-banner__link" href="#">
-                    <picture class="main-banner__picture">
-                        <!--ресайз картинок 750*750 1500*1500 1920*750 3840*1500-->
-                        <source srcset="images/content/banner_2.jpg, images/content/banner_2@2x.jpg 2x" media="(min-width: 768px)">
-                        <img src="images/content/banner_2_mob.jpg" srcset="images/content/banner_2_mob@2x.jpg 2x" alt="">
-                    </picture>
-                    <div class="main-banner__container">
-                        <p class="main-banner__title">Заголовок слайда</p>
-                        <p class="main-banner__text">Небольшой текст для слайда, чтобы было понятно о чём идёт речь...</p>
-                        <p><span class="main-banner__button">Подробнее</span></p>
-                    </div>
-                </a>
-            </div>
-        </div>
-
         <div class="container">
-            <h2>Популярные категории</h2>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+                <li class="breadcrumbs__item">Гостиная</li>
+            </ul>
 
-            <div class="sections-cards">
+            <h1 class="text-center">Мебель для гостиной</h1>
+
+            <div class="text-block">
+                <p>Брайан Патрик Флинн - американский телевизионный продюсер, ставший дизайнером интерьеров. После многих лет написания, производства и управления новостными программами и показами обустройства дома, Флинн попробовал свои силы в жилых
+                    интерьерах, быстро заработав уважение своих коллег и редакторов журналов о жилье.</p>
+                <p>Брайан объединил свои навыки дизайна и декорирования с опытом производства телевизионных программ для создания FlynnsideOut Productions, производственной компании с полным спектром услуг, специализирующейся на контенте, связанном с
+                    образом жизни.</p>
+                <p>Помимо работы в качестве основателя, Брайан также является исполнительным продюсером, дизайнером декораций, писателем и опорным стилистом для своих проектов.</p>
+            </div>
+
+            <h2>Столы</h2>
+
+            <div class="sections-cards sections-cards--hiddens">
                 <a class="sections-card" href="#">
                     <!--ресайз картинок 280*280-->
                     <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/divany.b89c7ae4.jpg" alt="Диваны">
@@ -597,684 +579,71 @@
                     <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/tekstil.6650cd79.jpg" alt="Текстиль">
                     <span class="sections-card__link">Текстиль</span>
                 </a>
+                <button class="js-show-hiddens sections-card" type="button">
+                    <span class="sections-card__more"></span>
+                    <span class="sections-card__link">Показать все</span>
+                </button>
             </div>
 
-            <h2 class="text-center">Топ продаж / Каталог</h2>
+            <h2>Стулья</h2>
 
-            <div class="tabs">
-                <ul class="tabs__list">
-                    <li class="tabs__list-item"><button class="tabs__button is-active" type="button" data-target="1">Мебель</button></li>
-                    <li class="tabs__list-item"><button class="tabs__button" type="button" data-target="2">Свет</button></li>
-                    <li class="tabs__list-item"><button class="tabs__button" type="button" data-target="3">Аксессуары &amp; декор</button></li>
-                </ul>
-
-                <div class="tab is-active" data-target="1">
-                    <div class="js-products-slider products-slider">
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav" type="button" title="Добавить в избранное">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav is-active" type="button" title="Убрать из избранного">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav" type="button" title="Добавить в избранное">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav is-active" type="button" title="Убрать из избранного">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab" data-target="2">
-                    <div class="js-products-slider products-slider">
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav" type="button" title="Добавить в избранное">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav is-active" type="button" title="Убрать из избранного">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav" type="button" title="Добавить в избранное">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav is-active" type="button" title="Убрать из избранного">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab" data-target="3">
-                    <div class="js-products-slider products-slider">
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav" type="button" title="Добавить в избранное">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav is-active" type="button" title="Убрать из избранного">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav" type="button" title="Добавить в избранное">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav is-active" type="button" title="Убрать из избранного">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="consult-form">
-                <div class="consult-form__inner">
-                    <div class="consult-form__form-block">
-                        <h2 class="consult-form__title">Нужна консультация?</h2>
-                        <p class="consult-form__subtitle">Оставьте заявку и мы перезвоним&nbsp;вам</p>
-                        <p class="consult-form__text">Консультация бесплатно!</p>
-                        <form class="consult-form__form" action="">
-                            <input class="consult-form__input" class type="text" placeholder="Ваш номер">
-                            <button class="consult-form__submit" type="button">Получить консультацию</button>
-                        </form>
-                    </div>
-                    <img src="images/content/consult-form.png" alt="">
-                </div>
-            </div>
-
-            <h2 class="text-center">Каталог новинок</h2>
-
-            <div class="tabs">
-                <ul class="tabs__list">
-                    <li class="tabs__list-item"><button class="tabs__button is-active" type="button" data-target="1">Мебель</button></li>
-                    <li class="tabs__list-item"><button class="tabs__button" type="button" data-target="2">Свет</button></li>
-                    <li class="tabs__list-item"><button class="tabs__button" type="button" data-target="3">Аксессуары &amp; декор</button></li>
-                </ul>
-
-                <div class="tab is-active" data-target="1">
-                    <div class="js-products-slider products-slider">
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav" type="button" title="Добавить в избранное">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav is-active" type="button" title="Убрать из избранного">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav" type="button" title="Добавить в избранное">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav is-active" type="button" title="Убрать из избранного">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab" data-target="2">
-                    <div class="js-products-slider products-slider">
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav" type="button" title="Добавить в избранное">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav is-active" type="button" title="Убрать из избранного">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav" type="button" title="Добавить в избранное">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav is-active" type="button" title="Убрать из избранного">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab" data-target="3">
-                    <div class="js-products-slider products-slider">
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav" type="button" title="Добавить в избранное">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav is-active" type="button" title="Убрать из избранного">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav" type="button" title="Добавить в избранное">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="products-slider__item">
-                            <div class="product">
-                                <a class="product__image" href="#">
-                                    <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
-                                </a>
-                                <p class="product__title">Диван Tondo</p>
-                                <p class="product__brand">Название бренда</p>
-                                <div class="product__price">
-                                    <span class="product__price-current">471 100 ₽</span>
-                                    <span class="product__price-old">
-                                        <span>523 500 ₽</span>
-                                        <span> | Скидка 10%</span>
-                                    </span>
-                                </div>
-                                <button class="product__fav is-active" type="button" title="Убрать из избранного">
-                                    <svg>
-                                        <use xlink:href="#favorite"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="benefits">
-                <div class="benefits__item">
-                    <div class="benefits__item-image">
-                        <img alt="Самые лучше цены" loading="lazy" src="https://assets-prod.inmyroom.ru/assets/benefits/best-price.a8a6a8a8.svg" title="Самые лучше цены">
-                    </div>
-                    <p class="benefits__item-title">Самые лучшие цены</p>
-                    <p class="benefits__item-text">Цены производителей и дистрибьюторов. Постоянные акции и распродажи.</p>
-                </div>
-                <div class="benefits__item">
-                    <div class="benefits__item-image">
-                        <img alt="Быстрая доставка" loading="lazy" src="https://assets-prod.inmyroom.ru/assets/benefits/free-delivery.f71e274c.svg" title="Быстрая доставка">
-                    </div>
-                    <p class="benefits__item-title">Быстрая доставка</p>
-                    <p class="benefits__item-text">Доставка от 1 дня. Одна доставка привезет товары от сотен производителей и поставщиков.</p>
-                </div>
-                <div class="benefits__item">
-                    <div class="benefits__item-image">
-                        <img alt="Великолепный сервис" loading="lazy" src="https://assets-prod.inmyroom.ru/assets/benefits/great-service.8402dc47.svg" title="Великолепный сервис">
-                    </div>
-                    <p class="benefits__item-title">Великолепный сервис</p>
-                    <p class="benefits__item-text">Компетентный сервис, отлаженные годами процессы и довольные клиенты. 1 окно коммуникаций.</p>
-                </div>
-                <div class="benefits__item">
-                    <div class="benefits__item-image">
-                        <img alt="Только красивые товары" loading="lazy" src="https://assets-prod.inmyroom.ru/assets/benefits/beautiful-products.e4c1eeb3.svg" title="Только красивые товары">
-                    </div>
-                    <p class="benefits__item-title">Только красивые товары</p>
-                    <p class="benefits__item-text">Мы вручную выбираем самые красивые товары. А наши эксперты помогают в этом.</p>
-                </div>
-            </div>
-
-            <h2>Блог</h2>
-
-            <div class="blog">
-                <a class="blog-item" href="#">
-                    <span class="blog-item__image">
-                        <!--ресайз картинок 210*120, 420*240, 1024*780-->
-                        <picture>
-                            <source srcset="images/content/blog.jpg" media="(min-width: 1024px)">
-                            <img src="images/content/blog_mob.jpg" srcset="images/content/blog_mob@2x.jpg 2x" alt="Какая поза для сна самая опасная, а какая — полезная? Ответ сомнолога">
-                        </picture>
-                    </span>
-                    <span class="blog-item__text-block">
-                        <span>
-                            <span class="blog-item__title">Какая поза для сна самая опасная, а какая — полезная? Ответ сомнолога</span>
-                            <span class="blog-item__preview">
-                                Есть люди, которые могут уснуть только на боку или только спине. Есть те, кто ворочается на протяжении всей ночи и постоянно меняет позу. А некоторые даже меняют привычки, чтобы спать в «более здоровой» позе.
-                            </span>
-                        </span>
-                        <span class="blog-item__pseudo-link">Читать</span>
-                    </span>
+            <div class="sections-cards sections-cards--hiddens">
+                <a class="sections-card" href="#">
+                    <!--ресайз картинок 280*280-->
+                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/divany.b89c7ae4.jpg" alt="Диваны">
+                    <span class="sections-card__link">Диваны</span>
                 </a>
-                <a class="blog-item" href="#">
-                    <span class="blog-item__image">
-                        <!--ресайз картинок 210*120, 420*240, 180*180, 360*360-->
-                        <picture>
-                            <source srcset="images/content/blog_small.jpg, images/content/blog_small@2x.jpg 2x" media="(min-width: 1024px)">
-                            <img src="images/content/blog_mob.jpg" srcset="images/content/blog_mob@2x.jpg 2x" alt="Какая поза для сна самая опасная, а какая — полезная? Ответ сомнолога">
-                        </picture>
-                    </span>
-                    <span class="blog-item__text-block">
-                        <span>
-                            <span class="blog-item__title">Какая поза для сна самая опасная, а какая — полезная? Ответ сомнолога</span>
-                            <span class="blog-item__preview">
-                                Есть люди, которые могут уснуть только на боку или только спине. Есть те, кто ворочается на протяжении всей ночи и постоянно меняет позу. А некоторые даже меняют привычки, чтобы спать в «более здоровой» позе.
-                            </span>
-                        </span>
-                        <span class="blog-item__pseudo-link">Читать</span>
-                    </span>
+                <a class="sections-card" href="#">
+                    <!--ресайз картинок 280*280-->
+                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/krovati.668984a5.jpg" alt="Кровати">
+                    <span class="sections-card__link">Кровати</span>
                 </a>
-                <a class="blog-item" href="#">
-                    <span class="blog-item__image">
-                        <!--ресайз картинок 210*120, 420*240, 180*180, 360*360-->
-                        <picture>
-                            <source srcset="images/content/blog_small.jpg, images/content/blog_small@2x.jpg 2x" media="(min-width: 1024px)">
-                            <img src="images/content/blog_mob.jpg" srcset="images/content/blog_mob@2x.jpg 2x" alt="Какая поза для сна самая опасная, а какая — полезная? Ответ сомнолога">
-                        </picture>
-                    </span>
-                    <span class="blog-item__text-block">
-                        <span>
-                            <span class="blog-item__title">Какая поза для сна самая опасная, а какая — полезная? Ответ сомнолога</span>
-                            <span class="blog-item__preview">
-                                Есть люди, которые могут уснуть только на боку или только спине. Есть те, кто ворочается на протяжении всей ночи и постоянно меняет позу. А некоторые даже меняют привычки, чтобы спать в «более здоровой» позе.
-                            </span>
-                        </span>
-                        <span class="blog-item__pseudo-link">Читать</span>
-                    </span>
+                <a class="sections-card" href="#">
+                    <!--ресайз картинок 280*280-->
+                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/kresla.c7cb9cfe.jpg" alt="Кресла">
+                    <span class="sections-card__link">Кресла</span>
                 </a>
-                <a class="blog-item" href="#">
-                    <span class="blog-item__image">
-                        <!--ресайз картинок 210*120, 420*240, 180*180, 360*360-->
-                        <picture>
-                            <source srcset="images/content/blog_small.jpg, images/content/blog_small@2x.jpg 2x" media="(min-width: 1024px)">
-                            <img src="images/content/blog_mob.jpg" srcset="images/content/blog_mob@2x.jpg 2x" alt="Какая поза для сна самая опасная, а какая — полезная? Ответ сомнолога">
-                        </picture>
-                    </span>
-                    <span class="blog-item__text-block">
-                        <span>
-                            <span class="blog-item__title">Какая поза для сна самая опасная, а какая — полезная? Ответ сомнолога</span>
-                            <span class="blog-item__preview">
-                                Есть люди, которые могут уснуть только на боку или только спине. Есть те, кто ворочается на протяжении всей ночи и постоянно меняет позу. А некоторые даже меняют привычки, чтобы спать в «более здоровой» позе.
-                            </span>
-                        </span>
-                        <span class="blog-item__pseudo-link">Читать</span>
-                    </span>
+                <a class="sections-card" href="#">
+                    <!--ресайз картинок 280*280-->
+                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/pufy-i-banketki.f2540027.jpg" alt="Пуфы">
+                    <span class="sections-card__link">Пуфы</span>
+                </a>
+                <a class="sections-card" href="#">
+                    <!--ресайз картинок 280*280-->
+                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/stulya.3e55f875.jpg" alt="Стулья">
+                    <span class="sections-card__link">Стулья</span>
+                </a>
+                <a class="sections-card" href="#">
+                    <!--ресайз картинок 280*280-->
+                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/stoly.d0c1bbe7.jpg" alt="Столы">
+                    <span class="sections-card__link">Столы</span>
+                </a>
+                <button class="js-show-hiddens sections-card" type="button">
+                    <span class="sections-card__more"></span>
+                    <span class="sections-card__link">Показать все</span>
+                </button>
+            </div>
+
+            <h2>Диваны</h2>
+
+            <div class="sections-cards sections-cards--hiddens">
+                <a class="sections-card" href="#">
+                    <!--ресайз картинок 280*280-->
+                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/divany.b89c7ae4.jpg" alt="Диваны">
+                    <span class="sections-card__link">Диваны</span>
+                </a>
+                <a class="sections-card" href="#">
+                    <!--ресайз картинок 280*280-->
+                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/krovati.668984a5.jpg" alt="Кровати">
+                    <span class="sections-card__link">Кровати</span>
+                </a>
+                <a class="sections-card" href="#">
+                    <!--ресайз картинок 280*280-->
+                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/kresla.c7cb9cfe.jpg" alt="Кресла">
+                    <span class="sections-card__link">Кресла</span>
                 </a>
             </div>
+
         </div>
 
     </main>
@@ -1475,10 +844,7 @@
     
     <script src="js/main.js"></script>
 
-    <script src="js/slick.min.js"></script>
-    <script src="js/main-banner.js"></script>
-    <script src="js/tabs.js"></script>
-    <script src="js/products-slider.js"></script>
+    <script src="js/sections-cards.js"></script>
 
 </body>
 

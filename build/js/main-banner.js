@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
   if($('.js-main-banner').length) {
     $('.js-main-banner').slick({
       slidesToShow: 1,

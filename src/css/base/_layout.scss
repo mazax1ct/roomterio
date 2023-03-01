@@ -22,10 +22,22 @@ body {
     }
 }
 
+.main-page {
+    .content {
+        padding-top: 60px;
+        @media(min-width: $md) {
+            padding-top: 0;
+        }
+    }
+}
+
 .content {
     flex: 1 0 auto;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 60px;
+    @media(min-width: $sm) {
+        padding-top: 60px;
+    }
     @media(min-width: $md) {
         padding-top: 0;
     }
