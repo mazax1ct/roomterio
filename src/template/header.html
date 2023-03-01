@@ -1,7 +1,10 @@
 <header class="header">
     <div class="header__inner">
         <a class="header__logo" href="/">
-            <img src="images/logo.svg" alt="ROOMTERIO">
+            <picture>
+                <source srcset="images/logo_white.png, images/logo_white@2x.png 2x" media="(min-width: 1024px)">
+                <img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="ROOMTERIO">
+            </picture>
         </a>
 
         <button class="js-nav-opener header__menu-opener" type="button" title="Открыть меню">
@@ -399,7 +402,7 @@
                     </a>
                 </li>
                 <li class="header-nav__category all-goods">
-                    <a href="#">
+                    <a href="#" title="Весь каталог">
                         <svg>
                             <use xlink:href="#kebab"></use>
                         </svg>

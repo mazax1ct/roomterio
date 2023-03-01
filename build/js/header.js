@@ -42,11 +42,11 @@ var resize_scroll = function(e) {
 		header.removeClass('scrolled');
 	}
 
-	if (scrolled > $('.header').height() && scrolled > scrollPrev) {
+	/*if (scrolled > $('.header').height() && scrolled > scrollPrev) {
 		header.addClass('out');
 	} else {
 		header.removeClass('out');
-	}
+	}*/
 	scrollPrev = scrolled;
 };
 

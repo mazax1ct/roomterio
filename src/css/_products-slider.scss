@@ -8,6 +8,21 @@
         margin-bottom: 80px;
     }
 
+    &:not(.slick-initialized) {
+        display: flex;
+        overflow-x: auto;
+
+        .products-slider__item {
+            min-width: 100%;
+            @media(min-width: $sm) {
+                min-width: 50%;
+            }
+            @media(min-width: $md) {
+                min-width: 33.33333%;
+            }
+        }
+    }
+
     .slick-next,
     .slick-prev {
         align-items: center;

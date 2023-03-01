@@ -32,7 +32,7 @@
 
 </head>
 
-<body>
+<body class="main-page">
     <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
         <symbol id="burger" viewBox="0 0 24 24">
             <path
@@ -75,7 +75,10 @@
     <header class="header">
         <div class="header__inner">
             <a class="header__logo" href="/">
-                <img src="images/logo.svg" alt="ROOMTERIO">
+                <picture>
+                    <source srcset="images/logo_white.png, images/logo_white@2x.png 2x" media="(min-width: 1024px)">
+                    <img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="ROOMTERIO">
+                </picture>
             </a>
     
             <button class="js-nav-opener header__menu-opener" type="button" title="Открыть меню">
@@ -473,7 +476,7 @@
                         </a>
                     </li>
                     <li class="header-nav__category all-goods">
-                        <a href="#">
+                        <a href="#" title="Весь каталог">
                             <svg>
                                 <use xlink:href="#kebab"></use>
                             </svg>
@@ -507,7 +510,7 @@
                 </a>
             </div>
             <div class="main-banner__slide">
-                <a class="main-banner__link light" href="#">
+                <a class="main-banner__link" href="#">
                     <picture class="main-banner__picture">
                         <!--ресайз картинок 750*750 1500*1500 1920*750 3840*1500-->
                         <source srcset="images/content/banner_2.jpg, images/content/banner_2@2x.jpg 2x" media="(min-width: 768px)">
@@ -1427,7 +1430,7 @@
             </div>
     
             <div class="footer__logo">
-                <img width="60" height="60" src="images/logo.svg" alt="ROOMTERIO">
+                <img width="148" height="60" src="images/logo.png" srcset="images/logo@2x.png 2x" alt="ROOMTERIO">
             </div>
     
             <div>

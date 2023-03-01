@@ -1,3 +1,11 @@
+.main-page {
+    .header {
+        @media(min-width: $md) {
+            background-color: transparent;
+        }
+    }
+}
+
 .header {
     background-color: #fff;
     box-shadow: 0 3px 3px -2px rgba($text-color, 0.15);
@@ -9,6 +17,7 @@
     top: 0;
     z-index: 10;
     @media(min-width: $md) {
+        background-color: $text-color;
         box-shadow: none;
         min-height: 124px;
         position: static;
@@ -25,7 +34,7 @@
     &.scrolled {
         .header-nav {
             @media(min-width: $md) {
-                background-color: #fff;
+                background-color: $text-color;
                 box-shadow: 0 3px 3px -2px rgba($text-color, 0.15);
                 left: 0;
                 position: fixed;
@@ -56,17 +65,21 @@
     &__logo {
         display: block;
         order: 2;
-        width: 40px;
+        width: 90px;
         @media(min-width: $md) {
             left: 50%;
             position: absolute;
             top: 50%;
             transform: translate(-50%, -50%);
-            width: 60px;
+            width: 120px;
             z-index: 1;
         }
+        @media(min-width: $hd) {
+            width: 148px;
+        }
 
-        img {
+        img,
+        picture {
             display: block;
         }
     }
@@ -116,7 +129,8 @@
 
     &__menu-link {
         border-bottom: 1px dotted currentColor;
-        color: rgba($text-color, 0.8);
+        //color: rgba($text-color, 0.8);
+        color: #fff;
         text-decoration: none;
         transition: border-color 0.3s;
 
@@ -141,6 +155,10 @@
             display: none;
         }
         @media(min-width: $md) {
+            color: #fff;
+            margin-right: 10px;
+        }
+        @media(min-width: $hd) {
             margin-right: 15px;
         }
     }
@@ -159,12 +177,18 @@
 
         &:not(:last-child) {
             margin-right: 10px;
+            @media(min-width: $md) and (max-width: $hd - 1px) {
+                margin-right: 5px;
+            }
         }
 
         svg {
             fill: rgba($text-color, 0.8);
             height: 24px;
             width: 24px;
+            @media(min-width: $md) {
+                fill: #fff;
+            }
         }
     }
 
@@ -195,6 +219,7 @@
         width: 40px;
     }
     @media(min-width: $md) {
+        color: #fff;
         font-size: 16px;
         margin-right: 20px;
     }
@@ -203,7 +228,7 @@
     }
 
     &__text {
-        font-weight: bold;
+        font-weight: 500;
         @media(max-width: $sm - 1px) {
             display: none;
         }
@@ -226,6 +251,9 @@
     position: relative;
     text-align: center;
     z-index: 1;
+    @media(min-width: $md) {
+        color: #fff;
+    }
 
     &__text {
         left: 50%;
@@ -241,6 +269,10 @@
         stroke: rgba($text-color, 0.8);
         stroke-width: 1.4;
         width: 30px;
+        @media(min-width: $md) {
+            fill: none;
+            stroke: #fff;
+        }
     }
 }
 
@@ -278,7 +310,6 @@
     }
 
     a {
-        color: rgba($text-color, 0.8);
         text-decoration: none;
     }
 
@@ -368,9 +399,9 @@
         }
 
         &.actions {
-            a {
+            /*a {
                 color: $dark-gold-color;
-            }
+            }*/
         }
 
         &.all-goods {
@@ -382,17 +413,17 @@
                 align-items: center;
                 display: flex;
                 justify-content: center;
-                padding: 14px 6px;
-
-                &:hover {
+                padding: 14px;
+                /*&:hover {
                     svg {
                         fill: rgba($text-color, 0.7);
                     }
-                }
+                }*/
             }
 
             svg {
-                fill: rgba($text-color, 0.8);
+                //fill: rgba($text-color, 0.8);
+                fill: #fff;
                 height: 16px;
                 transition: fill 0.3s;
                 width: 16px;
@@ -408,13 +439,14 @@
         font-weight: 500;
         transition: opacity 0.3s;
         @media(min-width: $md) {
+            color: #fff;
             display: inline-block;
             font-size: 14px;
             padding: 6px;
         }
         @media(min-width: $hd) {
             font-size: 16px;
-            padding: 6px 14px;
+            padding: 10px 14px;
         }
 
         &:hover {
@@ -451,7 +483,7 @@
         }
         @media(min-width: $md) {
             position: absolute;
-            top: calc(100% - 10px);
+            top: 100%;
             left: 0;
             right: 0;
             display: flex !important;
