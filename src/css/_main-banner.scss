@@ -3,6 +3,9 @@
         @media(min-width: $md) {
             margin-top: -124px;
         }
+        @media(min-width: $hd) {
+            margin-top: -154px;
+        }
     }
 }
 
@@ -28,7 +31,7 @@
         z-index: 1;
 
         &::after {
-            background-color: rgba($text-color, 0.5);
+            background-color: rgba($text-color, 0.65);
             bottom: 0;
             content: '';
             left: 0;
@@ -60,7 +63,10 @@
                 max-height: 600px;
             }
             @media(min-width: $md) {
-                min-height: 500px;
+                min-height: 600px;
+            }
+            @media(min-width: $hd) {
+                min-height: 700px;
             }
         }
     }
