@@ -1,37 +1,35 @@
 .button {
     align-items: center;
-    background-color: #000;
-    border: none;
-    border-radius: 3px;
-    color: #fff;
+    background-color: transparent;
+    border: 1px solid $text-color;
+    border-radius: 0;
+    box-shadow: none;
+    color: $text-color;
     cursor: pointer;
     display: inline-flex;
-    font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     justify-content: center;
-    line-height: 1.22222;
-    min-height: 46px;
-    padding: 10px 22px;
+    min-height: 50px;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    user-select: none;
     vertical-align: top;
-    @media(min-width: $fhd) {
-        border-radius: 7px;
-        font-size: 20px;
-    }
 
     &:active,
     &:focus,
     &:hover {
-        background-color: #989898;
+        background-color: $text-color;
+        color: #fff;
         text-decoration: none;
     }
 
     &.disabled,
     &:disabled {
         box-shadow: none;
-        background-color: #f4f4f4;
+        border-color: rgba($text-color, 0.5);
+        color: rgba($text-color, 0.5);
         cursor: default;
         pointer-events: none;
 
@@ -40,6 +38,99 @@
         &:hover {
             box-shadow: none;
             text-decoration: none;
+        }
+    }
+
+    &--type_2 {
+        background-color: $text-color;
+        color: #fff;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: rgba($text-color, 0.8);
+            border-color: transparent;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &.disabled,
+        &:disabled {
+            box-shadow: none;
+            background-color: rgba($text-color, 0.5);
+            border-color: transparent;
+            color: #fff;
+            cursor: default;
+            pointer-events: none;
+
+            &:active,
+            &:focus,
+            &:hover {
+                box-shadow: none;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &--type_3 {
+        background-color: $gold-color;
+        border-color: $gold-color;
+        color: #fff;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $dark-gold-color;
+            border-color: $dark-gold-color;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &.disabled,
+        &:disabled {
+            box-shadow: none;
+            background-color: rgba($gold-color, 0.5);
+            border-color: transparent;
+            color: #fff;
+            cursor: default;
+            pointer-events: none;
+
+            &:active,
+            &:focus,
+            &:hover {
+                box-shadow: none;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &--type_4 {
+        border-color: $gold-color;
+        color: $gold-color;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $gold-color;
+            border-color: $gold-color;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &.disabled,
+        &:disabled {
+            box-shadow: none;
+            border-color: rgba($gold-color, 0.5);
+            color: rgba($gold-color, 0.5);
+            cursor: default;
+            pointer-events: none;
+
+            &:active,
+            &:focus,
+            &:hover {
+                box-shadow: none;
+                text-decoration: none;
+            }
         }
     }
 }

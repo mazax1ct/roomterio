@@ -1,9 +1,10 @@
 @import "base/_variables.scss";
 @import "base/_fonts.scss";
 @import "base/_layout.scss";
-@import "base/_typography.scss"; //@import "base/_buttons.scss";
+@import "base/_typography.scss";
+@import "base/_buttons.scss";
 @import "base/_checkboxes_and_radio.scss"; //@import "base/_inputs_and_textareas.scss";
-//@import "base/_selection.scss";
+@import "base/_selection.scss";
 @import "_header.scss";
 @import "_main-banner.scss";
 @import "_sections-cards.scss";
@@ -15,4 +16,5 @@
 @import "_breadcrumbs.scss";
 @import "_catalog.scss";
 @import "_pager.scss";
+@import "_detail.scss";
 @import "_footer.scss";

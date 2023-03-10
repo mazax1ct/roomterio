@@ -50,6 +50,12 @@
         }
     }
 
+    &:not(.scrolled) {
+        .header-nav.compensate-for-scrollbar {
+            margin-right: 0 !important;
+        }
+    }
+
     &__inner {
         align-items: center;
         display: flex;

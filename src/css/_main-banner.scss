@@ -102,9 +102,12 @@
     }
 
     &__button {
-        display: inline-block;
+        align-items: center;
+        display: inline-flex;
         border: 1px solid #fff;
-        padding: 15px 50px;
+        justify-content: center;
+        min-height: 50px;
+        padding: 10px 50px;
         background: transparent;
         transition: all 0.3s;
     }

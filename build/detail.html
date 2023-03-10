@@ -28,6 +28,9 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="css/plugins/slick.css">
+
+    <link rel="stylesheet" href="css/plugins/jquery.fancybox.css">
 </head>
 
 <body>
@@ -503,145 +506,209 @@
         <div class="container">
             <ul class="breadcrumbs">
                 <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
-                <li class="breadcrumbs__item">Гостиная</li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Каталог</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Свет</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Люстры</a></li>
+                <li class="breadcrumbs__item">Люстра 207-48</li>
             </ul>
 
-            <h1 class="text-center">Мебель для гостиной</h1>
+            <div class="detail" itemscope="" itemtype="http://schema.org/Product">
+                <div class="detail__top">
+                    <div class="detail__images">
+                        <div class="detail__fav-container">
+                            <button class="product__fav is-active" type="button" title="Убрать из избранного">
+                                <svg>
+                                    <use xlink:href="#favorite"></use>
+                                </svg>
+                            </button>
+                        </div>
 
-            <div class="text-block">
-                <p>Брайан Патрик Флинн - американский телевизионный продюсер, ставший дизайнером интерьеров. После многих лет написания, производства и управления новостными программами и показами обустройства дома, Флинн попробовал свои силы в жилых
-                    интерьерах, быстро заработав уважение своих коллег и редакторов журналов о жилье.</p>
-                <p>Брайан объединил свои навыки дизайна и декорирования с опытом производства телевизионных программ для создания FlynnsideOut Productions, производственной компании с полным спектром услуг, специализирующейся на контенте, связанном с
-                    образом жизни.</p>
-                <p>Помимо работы в качестве основателя, Брайан также является исполнительным продюсером, дизайнером декораций, писателем и опорным стилистом для своих проектов.</p>
+                        <div class="js-detail-slider detail-slider">
+                            <div class="detail-slider__slide">
+                                <a href="images/content/detail@2x.jpg" data-fancybox="images" rel="gallery">
+                                    <img src="images/content/detail.jpg" srcset="images/content/detail@2x.jpg 2x" alt="Люстра 207-48" itemprop="image">
+                                </a>
+                            </div>
+                            <div class="detail-slider__slide">
+                                <a href="images/content/detail@2x.jpg" data-fancybox="images" rel="gallery">
+                                    <img src="images/content/detail.jpg" srcset="images/content/detail@2x.jpg 2x" alt="Люстра 207-48" itemprop="image">
+                                </a>
+                            </div>
+                            <div class="detail-slider__slide">
+                                <a href="images/content/detail@2x.jpg" data-fancybox="images" rel="gallery">
+                                    <img src="images/content/detail.jpg" srcset="images/content/detail@2x.jpg 2x" alt="Люстра 207-48" itemprop="image">
+                                </a>
+                            </div>
+                            <div class="detail-slider__slide">
+                                <a href="images/content/detail@2x.jpg" data-fancybox="images" rel="gallery">
+                                    <img src="images/content/detail.jpg" srcset="images/content/detail@2x.jpg 2x" alt="Люстра 207-48" itemprop="image">
+                                </a>
+                            </div>
+                            <div class="detail-slider__slide">
+                                <a href="images/content/detail@2x.jpg" data-fancybox="images" rel="gallery">
+                                    <img src="images/content/detail.jpg" srcset="images/content/detail@2x.jpg 2x" alt="Люстра 207-48" itemprop="image">
+                                </a>
+                            </div>
+                            <div class="detail-slider__slide">
+                                <a href="images/content/detail@2x.jpg" data-fancybox="images" rel="gallery">
+                                    <img src="images/content/detail.jpg" srcset="images/content/detail@2x.jpg 2x" alt="Люстра 207-48" itemprop="image">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="js-detail-thumbs detail-thumbs">
+                            <div class="detail-thumbs__slide">
+                                <img src="images/content/detail_thumb.jpg" srcset="images/content/detail_thumb@2x.jpg 2x" alt="Люстра 207-48">
+                            </div>
+                            <div class="detail-thumbs__slide">
+                                <img src="images/content/detail_thumb.jpg" srcset="images/content/detail_thumb@2x.jpg 2x" alt="Люстра 207-48">
+                            </div>
+                            <div class="detail-thumbs__slide">
+                                <img src="images/content/detail_thumb.jpg" srcset="images/content/detail_thumb@2x.jpg 2x" alt="Люстра 207-48">
+                            </div>
+                            <div class="detail-thumbs__slide">
+                                <img src="images/content/detail_thumb.jpg" srcset="images/content/detail_thumb@2x.jpg 2x" alt="Люстра 207-48">
+                            </div>
+                            <div class="detail-thumbs__slide">
+                                <img src="images/content/detail_thumb.jpg" srcset="images/content/detail_thumb@2x.jpg 2x" alt="Люстра 207-48">
+                            </div>
+                            <div class="detail-thumbs__slide">
+                                <img src="images/content/detail_thumb.jpg" srcset="images/content/detail_thumb@2x.jpg 2x" alt="Люстра 207-48">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail__info">
+                        <h1 itemprop="name">Люстра 207-48</h1>
+
+                        <p class="detail__artikul">Артикул: ЦБ-00099848</p>
+
+                        <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                            <p class="detail__old-price">509 472</p>
+                            <p class="detail__price">305 684 ₽</p>
+
+                            <div class="detail__buttons">
+                                <a class="button button--type_3" href="111236">Добавить в корзину</a>
+                                <button class="button button--type_4" type="button">Быстрая покупка</button>
+                            </div>
+
+                            <p class="detail__stock detail__stock--in_stock">В наличии (на складе в Санкт-Петербурге)</p>
+
+                            <link itemprop="availability" href="http://schema.org/InStock">
+                            <meta itemprop="price" content="305 684">
+                            <meta itemprop="priceCurrency" content="RUB">
+                            <meta itemprop="sku" content="ЦБ-00099848">
+                        </div>
+
+                        <p class="detail__note">* Отделка и обивка товара в наличии может отличаться от представленного изображения. За дополнительной информацией обращайтесь к менеджерам салона.</p>
+                    </div>
+                </div>
+                <div class="detail__bottom">
+                    <div class="detail__bottom-block">
+                        <h2>О товаре</h2>
+                        <p>Компания Декорум предлагает большой ассортимент дизайнерской мебели и света. Товары в наличии и на заказ по каталогам.</p>
+                    </div>
+                    <div class="detail__bottom-block" itemprop="description">
+                        <h2>Характеристики</h2>
+                        <ul>
+                            <li>Производитель: <span>Corbett Lighting</span></li>
+                            <li>Артикул: ЦБ-00099848</li>
+                            <li>Высота: 109 см</li>
+                            <li>Материал плафона: Ткань</li>
+                            <li>Материал светильника: Металь, поталь</li>
+                            <li>Мощность: 8 - 60 Вт</li>
+                            <li>Ширина: 86 см</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-            <h2>Столы</h2>
+            <h2 class="text-center">С этим товаром просматривают</h2>
 
-            <div class="sections-cards sections-cards--hiddens">
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/divany.b89c7ae4.jpg" alt="Диваны">
-                    <span class="sections-card__link">Диваны</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/krovati.668984a5.jpg" alt="Кровати">
-                    <span class="sections-card__link">Кровати</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/kresla.c7cb9cfe.jpg" alt="Кресла">
-                    <span class="sections-card__link">Кресла</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/pufy-i-banketki.f2540027.jpg" alt="Пуфы">
-                    <span class="sections-card__link">Пуфы</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/stulya.3e55f875.jpg" alt="Стулья">
-                    <span class="sections-card__link">Стулья</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/stoly.d0c1bbe7.jpg" alt="Столы">
-                    <span class="sections-card__link">Столы</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/komody.b1651b62.jpg" alt="Комоды">
-                    <span class="sections-card__link">Комоды</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/tumby.48c8e54f.jpg" alt="Тумбы">
-                    <span class="sections-card__link">Тумбы</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/shkafy.e448b4f7.jpg" alt="Шкафы">
-                    <span class="sections-card__link">Шкафы</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/zerkala.1386e0d8.jpg" alt="Зеркала">
-                    <span class="sections-card__link">Зеркала</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/osveschenie.e7cddeee.jpg" alt="Свет">
-                    <span class="sections-card__link">Свет</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/tekstil.6650cd79.jpg" alt="Текстиль">
-                    <span class="sections-card__link">Текстиль</span>
-                </a>
-                <button class="js-show-hiddens sections-card" type="button">
-                    <span class="sections-card__more"></span>
-                    <span class="sections-card__link">Показать все</span>
-                </button>
-            </div>
-
-            <h2>Стулья</h2>
-
-            <div class="sections-cards sections-cards--hiddens">
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/divany.b89c7ae4.jpg" alt="Диваны">
-                    <span class="sections-card__link">Диваны</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/krovati.668984a5.jpg" alt="Кровати">
-                    <span class="sections-card__link">Кровати</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/kresla.c7cb9cfe.jpg" alt="Кресла">
-                    <span class="sections-card__link">Кресла</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/pufy-i-banketki.f2540027.jpg" alt="Пуфы">
-                    <span class="sections-card__link">Пуфы</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/stulya.3e55f875.jpg" alt="Стулья">
-                    <span class="sections-card__link">Стулья</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/stoly.d0c1bbe7.jpg" alt="Столы">
-                    <span class="sections-card__link">Столы</span>
-                </a>
-                <button class="js-show-hiddens sections-card" type="button">
-                    <span class="sections-card__more"></span>
-                    <span class="sections-card__link">Показать все</span>
-                </button>
-            </div>
-
-            <h2>Диваны</h2>
-
-            <div class="sections-cards sections-cards--hiddens">
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/divany.b89c7ae4.jpg" alt="Диваны">
-                    <span class="sections-card__link">Диваны</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/krovati.668984a5.jpg" alt="Кровати">
-                    <span class="sections-card__link">Кровати</span>
-                </a>
-                <a class="sections-card" href="#">
-                    <!--ресайз картинок 280*280-->
-                    <img src="https://assets-prod.inmyroom.ru/assets/catalog-teasers/kresla.c7cb9cfe.jpg" alt="Кресла">
-                    <span class="sections-card__link">Кресла</span>
-                </a>
+            <div class="js-products-slider products-slider">
+                <div class="products-slider__item">
+                    <div class="product">
+                        <a class="product__image" href="#">
+                            <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
+                        </a>
+                        <p class="product__title">Диван Tondo</p>
+                        <p class="product__brand">Название бренда</p>
+                        <div class="product__price">
+                            <span class="product__price-current">471 100 ₽</span>
+                            <span class="product__price-old">
+                                <span>523 500 ₽</span>
+                                <span> | Скидка 10%</span>
+                            </span>
+                        </div>
+                        <button class="product__fav" type="button" title="Добавить в избранное">
+                            <svg>
+                                <use xlink:href="#favorite"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="products-slider__item">
+                    <div class="product">
+                        <a class="product__image" href="#">
+                            <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
+                        </a>
+                        <p class="product__title">Диван Tondo</p>
+                        <p class="product__brand">Название бренда</p>
+                        <div class="product__price">
+                            <span class="product__price-current">471 100 ₽</span>
+                            <span class="product__price-old">
+                                <span>523 500 ₽</span>
+                                <span> | Скидка 10%</span>
+                            </span>
+                        </div>
+                        <button class="product__fav is-active" type="button" title="Убрать из избранного">
+                            <svg>
+                                <use xlink:href="#favorite"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="products-slider__item">
+                    <div class="product">
+                        <a class="product__image" href="#">
+                            <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
+                        </a>
+                        <p class="product__title">Диван Tondo</p>
+                        <p class="product__brand">Название бренда</p>
+                        <div class="product__price">
+                            <span class="product__price-current">471 100 ₽</span>
+                            <span class="product__price-old">
+                                <span>523 500 ₽</span>
+                                <span> | Скидка 10%</span>
+                            </span>
+                        </div>
+                        <button class="product__fav" type="button" title="Добавить в избранное">
+                            <svg>
+                                <use xlink:href="#favorite"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="products-slider__item">
+                    <div class="product">
+                        <a class="product__image" href="#">
+                            <img src="https://importhome.ru/upload/resize_cache/iblock/a03/400_400_0/a03cd67d0bc5d911e4604997b79e00ee.jpg" alt="Диван Tondo">
+                        </a>
+                        <p class="product__title">Диван Tondo</p>
+                        <p class="product__brand">Название бренда</p>
+                        <div class="product__price">
+                            <span class="product__price-current">471 100 ₽</span>
+                            <span class="product__price-old">
+                                <span>523 500 ₽</span>
+                                <span> | Скидка 10%</span>
+                            </span>
+                        </div>
+                        <button class="product__fav is-active" type="button" title="Убрать из избранного">
+                            <svg>
+                                <use xlink:href="#favorite"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -844,8 +911,11 @@
     
     <script src="js/main.js"></script>
 
-    <script src="js/sections-cards.js"></script>
-
+    <script src="js/slick.min.js"></script>
+    <script src="js/detail.js"></script>
+    <script src="js/products-slider.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
 </body>
 
 </html>

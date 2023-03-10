@@ -1,11 +1,14 @@
 .products-slider {
-    margin-bottom: 40px;
     @media(max-width: $md - 1px) {
         margin-left: -10px;
         margin-right: -10px;
     }
-    @media(min-width: $hd) {
-        margin-bottom: 80px;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+        @media(min-width: $hd) {
+            margin-bottom: 80px;
+        }
     }
 
     &:not(.slick-initialized) {
