@@ -43,11 +43,25 @@
                 Сб-Вс: 10.00 - 19.00
             </div>
 
-            <button class="header__icon-button" type="button" title="Поиск">
+            <button class="js-search-opener header__icon-button" type="button" title="Поиск">
                 <svg>
                     <use xlink:href="#search"></use>
                 </svg>
             </button>
+
+            <div class="search-popup">
+                <div class="search-popup__inner">
+                    <form class="search-popup__form" action="/search/" method="get">
+                        <input class="search-popup__input" name="q" type="text" value="" maxlength="64" placeholder="Поиск по каталогу">
+                        <button class="search-popup__submit" type="submit">Искать</button>
+                    </form>
+                    <button class="js-search-closer search-popup__close" type="button" title="Закрыть поиск">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
 
             <a class="header__icon-button header-favorite" href="#" title="Избранное">
                 <svg class="header-favorite__icon">

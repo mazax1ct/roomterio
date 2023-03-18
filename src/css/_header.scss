@@ -579,3 +579,84 @@
         }
     }
 }
+
+.search-popup {
+    background-color: rgba($text-color, 0.5);
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+
+    &.is-open {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__inner {
+        max-width: 90%;
+        position: relative;
+        width: 100%;
+    }
+
+    &__form {}
+
+    &__input {
+        background-color: #fff;
+        border: 1px solid $text-color;
+        height: 56px;
+        padding: 0 80px 0 24px;
+        width: 100%;
+        @media(min-width: 1024px) {
+            font-size: 24px;
+            height: 80px;
+            padding-right: 104px;
+        }
+    }
+
+    &__submit {
+        background-color: transparent;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+
+    &__close {
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        height: 56px;
+        justify-content: center;
+        left: auto;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 56px;
+        z-index: 1;
+        @media(min-width: 1024px) {
+            height: 80px;
+            width: 80px;
+        }
+
+        svg {
+            fill: $text-color;
+            height: 16px;
+            width: 16px;
+            @media(min-width: 1024px) {
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
+}

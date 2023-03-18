@@ -42,11 +42,6 @@ var resize_scroll = function(e) {
 		header.removeClass('scrolled');
 	}
 
-	/*if (scrolled > $('.header').height() && scrolled > scrollPrev) {
-		header.addClass('out');
-	} else {
-		header.removeClass('out');
-	}*/
 	scrollPrev = scrolled;
 };
 
@@ -57,3 +52,15 @@ $(document).ready(function() {
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
 $(window).on("scroll", resize_scroll).on("resize", resize_scroll);
+
+//поиск в шапке
+$(document).on('click', '.js-search-opener', function () {
+  $('.search-popup').addClass('is-open');
+  return false;
+});
+
+$(document).on('click', '.js-search-closer', function () {
+  $('.search-popup__input').val('');
+  $('.search-popup').removeClass('is-open');
+  return false;
+});
