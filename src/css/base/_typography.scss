@@ -28,9 +28,10 @@ img {
     vertical-align: top;
 }
 
+.h1,
 h1 {
+    font-size: 26px;
     font-weight: 400;
-    font-size: 30px;
     line-height: 1.375;
     margin-bottom: 20px;
     @media(min-width: $hd) {
@@ -39,9 +40,10 @@ h1 {
     }
 }
 
+.h2,
 h2 {
+    font-size: 22px;
     font-weight: 400;
-    font-size: 24px;
     line-height: 1.375;
     margin-bottom: 20px;
     @media(min-width: $hd) {
@@ -50,16 +52,26 @@ h2 {
     }
 }
 
-.content {
-    p:not([class]) {
-        &:not(:last-child) {
-            margin-bottom: 20px;
-        }
+.h3,
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.375;
+    margin-bottom: 20px;
+    @media(min-width: $hd) {
+        font-size: 32px;
     }
+}
 
-    ul {
-        list-style-position: inside;
+p {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
 
+ol,
+ul {
+    &:not([class]) {
         li {
             &:not(:last-child) {
                 margin-bottom: 10px;
@@ -68,6 +80,24 @@ h2 {
     }
 }
 
+ol,
+ul {
+    list-style-position: inside;
+
+    &:not([class]) {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
 .text-center {
     text-align: center;
+}
+
+blockquote {
+    border-left: 2px solid $dark-gold-color;
+    background-color: #f5f5f5;
+    margin: 20px 0;
+    padding: 20px;
 }

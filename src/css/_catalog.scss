@@ -223,9 +223,17 @@
 
     &__goods-list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 20px;
         margin-bottom: 40px;
+        @media(min-width: 520px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media(min-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media(min-width: 1024px) and (max-width: 1159px) {
+            grid-template-columns: 1fr 1fr;
+        }
 
         .product {
             border: 1px solid rgba($text-color, 0.1);
@@ -342,7 +350,7 @@
 .filter {
     @media(max-width: $md - 1px) {
         background-color: #fff;
-        height: 100vh;
+        height: 100dvh;
         max-height: 100vh;
         overflow-y: auto;
         padding: 20px;

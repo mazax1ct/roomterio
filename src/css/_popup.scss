@@ -1,0 +1,17 @@
+.popup {
+    background-color: #fff;
+    display: none;
+    max-width: 480px;
+    width: 100%;
+
+    &.fancybox-content {
+        cursor: auto;
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .checkbox,
+    .input-label {
+        margin-bottom: 24px;
+    }
+}

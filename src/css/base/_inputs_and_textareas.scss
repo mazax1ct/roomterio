@@ -1,18 +1,6 @@
 .input-label {
     display: block;
 
-    &__error {
-        color: $error-color;
-        display: block;
-        font-size: 14px;
-        line-height: 1.1875;
-        margin-top: 9px;
-        padding-left: 26px;
-        @media(min-width: $fhd) {
-            padding-left: 34px;
-        }
-    }
-
     &.error {
         .input-label__text {
             color: $error-color;
@@ -50,20 +38,15 @@
 
 .input,
 .textarea {
-    border: 1px solid #747474;
-    border-radius: 3px;
+    border: 1px solid $text-color;
+    border-radius: 0;
     background-color: transparent;
     color: $text-color;
     font-size: inherit;
     line-height: 1.33333;
-    padding: 0 26px;
+    padding: 0 16px;
     transition: border-color 0.3s;
     width: 100%;
-    @media(min-width: $fhd) {
-        border-radius: 15px;
-        padding-left: 34px;
-        padding-right: 34px;
-    }
 
     &:focus,
     &:hover {
@@ -146,15 +129,12 @@ textarea {
 }
 
 .input {
-    height: 55px;
-    @media(min-width: $fhd) {
-        height: 66px;
-    }
+    height: 48px;
 }
 
 .textarea {
     height: 170px;
-    padding: 20px 34px;
+    padding: 16px;
     resize: none;
     -ms-overflow-style: none;
     scrollbar-width: none;

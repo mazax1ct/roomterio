@@ -20,16 +20,12 @@
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <!--//= template/fonts_preload.html-->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="stylesheet" href="css/plugins/slick.css">
-
     <link rel="stylesheet" href="css/plugins/jquery.fancybox.css">
 </head>
 
@@ -588,7 +584,30 @@
 
                             <div class="detail__buttons">
                                 <a class="button button--type_3" href="111236">Добавить в корзину</a>
-                                <button class="button button--type_4" type="button">Быстрая покупка</button>
+                                <button class="button button--type_4" type="button" data-fancybox="fast_order" data-src="#fast_order">Быстрая покупка</button>
+                                <div id="fast_order" class="popup">
+                                    <p class="h3 text-center">Оставить заявку на товар</p>
+                                    <p class="text-center"><b>Люстра 207-48</b></p>
+                                    <form action="">
+                                        <label class="input-label">
+                                            <input class="input" type="text" placeholder="Ваше имя">
+                                        </label>
+                                        <label class="input-label error">
+                                            <input class="input" type="text" placeholder="Ваше телефон">
+                                        </label>
+                                        <label class="input-label">
+                                            <input class="input" type="text" placeholder="Ваше email">
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="terms">
+                                            <span class="checkbox__icon"></span>
+                                            <span>Я ознакомился с <a href="#" target="_blank">Политикой конфиденциальности</a> и даю свое согласие на обработку своих персональных данных.</span>
+                                        </label>
+                                        <p class="text-center">
+                                            <button class="button button--type_2" type="button" disabled>Отправить</button>
+                                        </p>
+                                    </form>
+                                </div>
                             </div>
 
                             <p class="detail__stock detail__stock--in_stock">В наличии (на складе в Санкт-Петербурге)</p>

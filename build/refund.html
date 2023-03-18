@@ -25,8 +25,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/plugins/ion.rangeSlider.css">
-    <link rel="stylesheet" href="css/plugins/select2.css">
 </head>
 
 <body>
@@ -500,410 +498,52 @@
     <main class="content">
 
         <div class="container">
+
             <ul class="breadcrumbs">
                 <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Гостиная</a></li>
-                <li class="breadcrumbs__item">Столы</li>
+                <li class="breadcrumbs__item">Политика возврата</li>
             </ul>
 
-            <div class="catalog">
-                <div class="catalog__goods-block">
-                    <h1>Столы для гостиной</h1>
-            
-                    <div class="catalog__goods-top">
-                        <div class="catalog__sorting">
-                            <span class="catalog__sorting-title">Сортировать по:</span>
-                            <div class="select-wrapper">
-                                <select class="js-select">
-                                    <option value="1" class="desc">убыванию цены</option>
-                                    <option value="2" class="asc">возрастанию цены</option>
-                                </select>
-                            </div>
-                        </div>
-            
-                        <div class="catalog__show-block">
-                            <span class="catalog__show-block-title">Показать:</span>
-                            <a class="catalog__show-button is-active" href="#">24</a>
-                            <a class="catalog__show-button" href="#">48</a>
-                            <a class="catalog__show-button" href="#">72</a>
-                        </div>
-                    </div>
-            
-                    <button class="js-filter-opener filter-opener" type="button">Фильтр</button>
-            
-                    <div class="catalog__goods-list">
-                        <div class="product">
-                            <a class="product__image" href="#">
-                                <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                            </a>
-                            <p class="product__title">Диван Tondo</p>
-                            <p class="product__brand">Название бренда</p>
-                            <div class="product__price">
-                                <span class="product__price-current">471 100 ₽</span>
-                                <span class="product__price-old">
-                                    <span>523 500 ₽</span>
-                                    <span> | Скидка 10%</span>
-                                </span>
-                            </div>
-                            <button class="product__fav" type="button" title="Добавить в избранное">
-                                <svg>
-                                    <use xlink:href="#favorite"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product">
-                            <a class="product__image" href="#">
-                                <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                            </a>
-                            <p class="product__title">Диван Tondo</p>
-                            <p class="product__brand">Название бренда</p>
-                            <div class="product__price">
-                                <span class="product__price-current">471 100 ₽</span>
-                                <span class="product__price-old">
-                                    <span>523 500 ₽</span>
-                                    <span> | Скидка 10%</span>
-                                </span>
-                            </div>
-                            <button class="product__fav" type="button" title="Добавить в избранное">
-                                <svg>
-                                    <use xlink:href="#favorite"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <!--<div class="product">
-                            <a class="product__image" href="#">
-                                <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                            </a>
-                            <p class="product__title">Диван Tondo</p>
-                            <p class="product__brand">Название бренда</p>
-                            <div class="product__price">
-                                <span class="product__price-current">471 100 ₽</span>
-                                <span class="product__price-old">
-                                    <span>523 500 ₽</span>
-                                    <span> | Скидка 10%</span>
-                                </span>
-                            </div>
-                            <button class="product__fav" type="button" title="Добавить в избранное">
-                                <svg>
-                                    <use xlink:href="#favorite"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product">
-                            <a class="product__image" href="#">
-                                <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                            </a>
-                            <p class="product__title">Диван Tondo</p>
-                            <p class="product__brand">Название бренда</p>
-                            <div class="product__price">
-                                <span class="product__price-current">471 100 ₽</span>
-                                <span class="product__price-old">
-                                    <span>523 500 ₽</span>
-                                    <span> | Скидка 10%</span>
-                                </span>
-                            </div>
-                            <button class="product__fav" type="button" title="Добавить в избранное">
-                                <svg>
-                                    <use xlink:href="#favorite"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product">
-                            <a class="product__image" href="#">
-                                <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                            </a>
-                            <p class="product__title">Диван Tondo</p>
-                            <p class="product__brand">Название бренда</p>
-                            <div class="product__price">
-                                <span class="product__price-current">471 100 ₽</span>
-                                <span class="product__price-old">
-                                    <span>523 500 ₽</span>
-                                    <span> | Скидка 10%</span>
-                                </span>
-                            </div>
-                            <button class="product__fav" type="button" title="Добавить в избранное">
-                                <svg>
-                                    <use xlink:href="#favorite"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product">
-                            <a class="product__image" href="#">
-                                <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                            </a>
-                            <p class="product__title">Диван Tondo</p>
-                            <p class="product__brand">Название бренда</p>
-                            <div class="product__price">
-                                <span class="product__price-current">471 100 ₽</span>
-                                <span class="product__price-old">
-                                    <span>523 500 ₽</span>
-                                    <span> | Скидка 10%</span>
-                                </span>
-                            </div>
-                            <button class="product__fav" type="button" title="Добавить в избранное">
-                                <svg>
-                                    <use xlink:href="#favorite"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product">
-                            <a class="product__image" href="#">
-                                <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                            </a>
-                            <p class="product__title">Диван Tondo</p>
-                            <p class="product__brand">Название бренда</p>
-                            <div class="product__price">
-                                <span class="product__price-current">471 100 ₽</span>
-                                <span class="product__price-old">
-                                    <span>523 500 ₽</span>
-                                    <span> | Скидка 10%</span>
-                                </span>
-                            </div>
-                            <button class="product__fav" type="button" title="Добавить в избранное">
-                                <svg>
-                                    <use xlink:href="#favorite"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product">
-                            <a class="product__image" href="#">
-                                <img src="http://importhome.ru/upload/resize_cache/iblock/db8/400_400_0/db81058711a568bc136688fa604b5fe6.jpg" alt="Диван Tondo">
-                            </a>
-                            <p class="product__title">Диван Tondo</p>
-                            <p class="product__brand">Название бренда</p>
-                            <div class="product__price">
-                                <span class="product__price-current">471 100 ₽</span>
-                                <span class="product__price-old">
-                                    <span>523 500 ₽</span>
-                                    <span> | Скидка 10%</span>
-                                </span>
-                            </div>
-                            <button class="product__fav" type="button" title="Добавить в избранное">
-                                <svg>
-                                    <use xlink:href="#favorite"></use>
-                                </svg>
-                            </button>
-                        </div>-->
-                    </div>
-            
-                    <ul class="pager">
-                        <li class="pager__item pager__item--arrow">
-                            <a class="pager__link" href="#">В начало</a>
-                        </li>
-                        <li class="pager__item">
-                            <a class="pager__link" class="pager__link" href="#">1</a>
-                        </li>
-                        <li class="pager__item">
-                            <a class="pager__link" class="pager__link" href="#">2</a>
-                        </li>
-                        <li class="pager__item">
-                            <span class="pager__link is-active">3</span>
-                        </li>
-                        <li class="pager__item">
-                            <a class="pager__link" href="#">4</a>
-                        </li>
-                        <li class="pager__item">
-                            <a class="pager__link" href="#">5</a>
-                        </li>
-                        <li class="pager__item pager__item--arrow">
-                            <a class="pager__link" href="#">В конец</a>
-                        </li>
-                    </ul>
-            
-                    <div class="text-block">
-                        <p>Брайан Патрик Флинн - американский телевизионный продюсер, ставший дизайнером интерьеров. После многих лет написания, производства и управления новостными программами и показами обустройства дома, Флинн попробовал свои силы в жилых
-                            интерьерах, быстро заработав уважение своих коллег и редакторов журналов о жилье.</p>
-                        <p>Брайан объединил свои навыки дизайна и декорирования с опытом производства телевизионных программ для создания FlynnsideOut Productions, производственной компании с полным спектром услуг, специализирующейся на контенте, связанном с
-                            образом жизни.</p>
-                        <p>Помимо работы в качестве основателя, Брайан также является исполнительным продюсером, дизайнером декораций, писателем и опорным стилистом для своих проектов.</p>
-                    </div>
-                </div>
-            
-                <div class="catalog__filter">
-                    <div class="filter">
-                        <form class="filter__inner" method="post" action="section.html">
-                            <div class="filter__section">
-                                <button class="js-filter-section-opener filter__section-title is-open" type="button">Цена</button>
-                                <div class="filter__section-inner is-open">
-                                    <div class="price-inputs">
-                                        <div class="price-inputs__item">
-                                            <span class="price-inputs__item-title">от</span>
-                                            <input id="min" class="price-input" type="text" placeholder="4900" value="4900">
-                                        </div>
-                                        <div class="price-inputs__item">
-                                            <span class="price-inputs__item-title">до</span>
-                                            <input id="max" class="price-input" type="text" placeholder="28000" value="28000">
-                                        </div>
-                                    </div>
-                                    <input class="js-price-slider" type="text" name="price_range" value="" />
-                                </div>
-                            </div>
-                            <div class="filter__section">
-                                <button class="js-filter-section-opener filter__section-title is-open" type="button">Наличие</button>
-                                <div class="filter__section-inner is-open">
-                                    <label class="checkbox" for="checkbox_1">
-                                        <input id="checkbox_1" type="checkbox" name="stock" value="1">
-                                        <span class="checkbox__icon"></span>
-                                        на складе
-                                    </label>
-                                    <label class="checkbox" for="checkbox_2">
-                                        <input id="checkbox_2" type="checkbox" name="stock" value="2">
-                                        <span class="checkbox__icon"></span>
-                                        под заказ
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="filter__section">
-                                <button class="js-filter-section-opener filter__section-title is-open" type="button">Производитель</button>
-                                <div class="filter__section-inner is-open">
-                                    <label class="checkbox" for="checkbox_3">
-                                        <input id="checkbox_3" type="checkbox" name="fabric" value="1">
-                                        <span class="checkbox__icon"></span>
-                                        Profildoors
-                                    </label>
-                                    <label class="checkbox" for="checkbox_4">
-                                        <input id="checkbox_4" type="checkbox" name="fabric" value="2">
-                                        <span class="checkbox__icon"></span>
-                                        Velldoris
-                                    </label>
-                                    <label class="checkbox" for="checkbox_5">
-                                        <input id="checkbox_5" type="checkbox" name="fabric" value="3">
-                                        <span class="checkbox__icon"></span>
-                                        Turen Becker
-                                    </label>
-                                    <label class="checkbox" for="checkbox_6">
-                                        <input id="checkbox_6" type="checkbox" name="fabric" value="4">
-                                        <span class="checkbox__icon"></span>
-                                        Zadoor
-                                    </label>
-                                    <label class="checkbox" for="checkbox_7">
-                                        <input id="checkbox_7" type="checkbox" name="fabric" value="5">
-                                        <span class="checkbox__icon"></span>
-                                        Форест
-                                    </label>
-                                    <label class="checkbox" for="checkbox_3">
-                                        <input id="checkbox_3" type="checkbox" name="fabric" value="1">
-                                        <span class="checkbox__icon"></span>
-                                        Profildoors
-                                    </label>
-                                    <div class="filter__section-cut">
-                                        <label class="checkbox" for="checkbox_3">
-                                            <input id="checkbox_3" type="checkbox" name="fabric" value="1">
-                                            <span class="checkbox__icon"></span>
-                                            Profildoors
-                                        </label>
-                                        <label class="checkbox" for="checkbox_4">
-                                            <input id="checkbox_4" type="checkbox" name="fabric" value="2">
-                                            <span class="checkbox__icon"></span>
-                                            Velldoris
-                                        </label>
-                                        <label class="checkbox" for="checkbox_5">
-                                            <input id="checkbox_5" type="checkbox" name="fabric" value="3">
-                                            <span class="checkbox__icon"></span>
-                                            Turen Becker
-                                        </label>
-                                        <label class="checkbox" for="checkbox_6">
-                                            <input id="checkbox_6" type="checkbox" name="fabric" value="4">
-                                            <span class="checkbox__icon"></span>
-                                            Zadoor
-                                        </label>
-                                        <label class="checkbox" for="checkbox_7">
-                                            <input id="checkbox_7" type="checkbox" name="fabric" value="5">
-                                            <span class="checkbox__icon"></span>
-                                            Форест
-                                        </label>
-                                    </div>
-                                    <button class="js-filter-section-cut filter__section-cut-toggler" type="button" data-text="Скрыть">Показать все</button>
-                                </div>
-                            </div>
-                            <div class="filter__section">
-                                <button class="js-filter-section-opener filter__section-title" type="button">Цвет</button>
-                                <div class="filter__section-inner ">
-                                    <label class="filter__color">
-                                        <input type="checkbox" name="color_" value="1">
-                                        <span class="filter__color-icon"><img src="images/content/img_41.jpg" alt="Серый"></span>
-                                        Серый
-                                    </label>
-                                    <label class="filter__color">
-                                        <input type="checkbox" name="color_" value="2">
-                                        <span class="filter__color-icon"><img src="images/content/img_42.jpg" alt="Бордо"></span>
-                                        Бордо
-                                    </label>
-                                    <label class="filter__color">
-                                        <input type="checkbox" name="color_" value="3">
-                                        <span class="filter__color-icon"><img src="images/content/img_43.jpg" alt="Светло-серый"></span>
-                                        Светло-серый
-                                    </label>
-                                    <label class="filter__color">
-                                        <input type="checkbox" name="color_" value="4">
-                                        <span class="filter__color-icon"><img src="images/content/img_44.jpg" alt="Белый"></span>
-                                        Белый
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="filter__section">
-                                <button class="js-filter-section-opener filter__section-title" type="button">Стиль</button>
-                                <div class="filter__section-inner ">
-                                    <label class="checkbox" for="checkbox_11">
-                                        <input id="checkbox_11" type="checkbox" name="style" value="1">
-                                        <span class="checkbox__icon"></span>
-                                        Классика
-                                    </label>
-                                    <label class="checkbox" for="checkbox_12">
-                                        <input id="checkbox_12" type="checkbox" name="style" value="2">
-                                        <span class="checkbox__icon"></span>
-                                        Модерн
-                                    </label>
-                                    <label class="checkbox" for="checkbox_13">
-                                        <input id="checkbox_13" type="checkbox" name="style" value="3">
-                                        <span class="checkbox__icon"></span>
-                                        Стекло
-                                    </label>
-                                    <label class="checkbox" for="checkbox_14">
-                                        <input id="checkbox_14" type="checkbox" name="style" value="4">
-                                        <span class="checkbox__icon"></span>
-                                        Хайтек
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="filter__section">
-                                <button class="js-filter-section-opener filter__section-title" type="button">Материал</button>
-                                <div class="filter__section-inner ">
-                                    <label class="checkbox" for="checkbox_15">
-                                        <input id="checkbox_15" type="checkbox" name="material" value="1">
-                                        <span class="checkbox__icon"></span>
-                                        Массив дуба
-                                    </label>
-                                    <label class="checkbox" for="checkbox_16">
-                                        <input id="checkbox_16" type="checkbox" name="material" value="2">
-                                        <span class="checkbox__icon"></span>
-                                        Массив ольхи
-                                    </label>
-                                    <label class="checkbox" for="checkbox_17">
-                                        <input id="checkbox_17" type="checkbox" name="material" value="3">
-                                        <span class="checkbox__icon"></span>
-                                        Массив сосны
-                                    </label>
-                                    <label class="checkbox" for="checkbox_18">
-                                        <input id="checkbox_18" type="checkbox" name="material" value="4">
-                                        <span class="checkbox__icon"></span>
-                                        Пвх
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="filter__buttons">
-                                <button class="filter__button filter__button--type_1" type="submit">Применить</button>
-                                <button class="filter__button" type="reset">Сбросить</button>
-                            </div>
-                        </form>
-                    </div>
-                    <button class="js-filter-closer filter-closer" type="button" title="Закрыть фильтр">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#close" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+            <h1 class="text-center">Политика возврата</h1>
+
+            <p>Обмен и возврат товара осуществляется в соответствии с Гражданским Кодексом Российской Федерации, Законом РФ от 07.02.1992 N 2300-1 "О защите прав потребителей", а также Постановлением Правительства РФ от 21.07.1997 N 918 "Об
+                утверждении Правил продажи товаров по образцам" и Постановлением Правительства РФ от 19.01.1998 N 55 "Об утверждении Правил продажи отдельных видов товаров, перечня товаров длительного пользования, на которые не распространяется
+                требование покупателя о безвозмездном предоставлении ему на период ремонта или замены аналогичного товара, и перечня непродовольственных товаров надлежащего качества, не подлежащих возврату или обмену на аналогичный товар других
+                размера, формы, габарита, фасона, расцветки или комплектации".</p>
+            <h2>Общие рекомендации по возврату</h2>
+            <ul>
+                <li>Внимательно осмотрите товар при доставке, чтобы убедиться, что вас устраивает качество, фактура и размер предмета. Вы можете отказаться от товара, если при получении товара обнаружили разницу между описанием на сайте и реальным
+                    товаром.</li>
+                <li>Обращаем ваше внимание на то, если заказываемый товар изготавливается из натурального дерева или камня, то учитывая, что цвет и фактура натурального дерева являются его природными характеристиками, мы не можем гарантировать полное
+                    совпадение цвета и фактуры, как различных единиц товара, так и различных частей одной единицы товара и различных партий товара одного артикула. Данное условие касается также оттенков и деталей элементов ручной росписи, оттенков
+                    натурального камня и иных природных материалов. Аналогичное правило применяется к ковровым изделиям из натуральных материалов при покупке более одного изделия.</li>
+                <li>Если заказываются электротехнические изделия (бра, торшеры, настольные лампы, потолочные светильники, люстры), и иные элементы декора, цветовая гамма может иметь оттенки, отличные от фотографий. В этом случае качественный товар
+                    возврату, замене не подлежит.</li>
+                <li>Цветовые оттенки отличные от цвета образца, в том числе в каталоге, на сайте, не является недостатком товара.</li>
+                <li>Если при приемке товара вы обнаружили дефекты (царапины, сколы и т.д.) немедленно заявите об этом и сделайте соответствующую рекламационную запись на приемопередаточном документе. В случае неисполнения данного требования при
+                    приемке товара, покупатель в дальнейшем не вправе предъявлять претензии по качеству, заявляя о царапинах; сколах; потертостях; пятнах, деформациях, и прочее. Подобные дефекты признаются сторонами, полученными покупателем в ходе
+                    обычной эксплуатации товара.</li>
+                <li>Товары, приобретенные по акции, возврату и обмену не подлежат.</li>
+                <li>Товар с индивидуальными характеристиками (то есть товар, изготовленный под заказ с нестандартными параметрами), имеющий надлежащее качество — обмену и возврату не подлежит согласно Ст. 26.1 Закона о защите прав потребителей
+                    (ЗоЗПП).</li>
+                <li>Возврат денежных средств покупателю осуществляется 2-мя способами: наличным расчетом, банковским переводом.</li>
+                <li>Способ возврата денежных средств совпадает со способом оплаты. Если покупатель не может самостоятельно забрать денежные средства, за него это может сделать доверенное лицо. В этом случае, осуществить возврат можно будет только при
+                    предъявлении доверенности и паспорта.</li>
+            </ul>
+            <h2>Обмен и возврат товара ненадлежащего качества</h2>
+            <ul>
+                <li>Если в течение Гарантийного срока вы обнаружили заводской брак товара, письменно обратитесь в DECORUM <a href="mailto:info@decorumdesign.ru"><a href="mailto:info@decorumdesign.ru">info@decorumdesign.ru</a></a> или позвоните по
+                    тел. <a href="tel:+78124071207">+78124071207</a> или <a href="tel:88005006134">8 (800) 500-61-34</a> (звонок по России бесплатно). Спорные вопросы, касающиеся обнаружения существенного недостатка (заводского брака), решаются на
+                    основании заключения рекламационной комиссии (проверка качества) и/или заключения независимой экспертизы. Расходы по экспертизе оплачиваются (возмещаются) виновной стороной.</li>
+                <li>Если в экспертном заключении будут установлены существенные недостатки качества товара, покупатель вправе по своему выбору потребовать соразмерного уменьшения покупной цены или незамедлительного безвозмездного устранения
+                    недостатков товара, или возмещения расходов на их исправление покупателем или третьим лицом.</li>
+                <li>Для товаров, на которые не установлен срок гарантийного обслуживания, но клиент обнаружил дефект в товаре, мы рассмотрим возможность ремонта данного товара производителем в индивидуальном порядке. В случае обнаружения дефектов в
+                    товаре, сообщите об этом по тел. <a href="tel:+78124071207">+78124071207</a> или напишите нам на <a href="mailto:info@decorumdesign.ru"><a href="mailto:info@decorumdesign.ru">info@decorumdesign.ru</a></a></li>
+            </ul>
+            <h2>Обмен и возврат товара надлежащего качества</h2>
+            <p>В случае, если приобретенные в нашем магазине товары не подошли вам по форме, размеру, габаритам, расцветке и т.д., при этом товар не был в употреблении, сохранены его товарный вид, потребительские свойства, заводская упаковка, то в
+                течение 14-ти дней вы можете обратиться к нам с заявлением на обмен на аналогичный товар или возврат денежных средств, если аналогичного товара нет в наличии. Доставка обмениваемого или возвращаемого товара на склад организуется и
+                оплачивается покупателем.</p>
 
         </div>
 
@@ -1104,11 +744,6 @@
     <script src="js/footer.js"></script>
     
     <script src="js/main.js"></script>
-
-    <script src="js/ion.rangeSlider.min.js"></script>
-    <script src="js/select2.full.min.js"></script>
-    <script src="js/select2-addon.js"></script>
-    <script src="js/catalog.js"></script>
 
 </body>
 

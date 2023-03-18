@@ -1,0 +1,27 @@
+.photos-list {
+    display: flex;
+    flex-wrap: wrap;
+    --gap: 10px;
+    gap: var(--gap);
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &:not(:first-child) {
+        margin-top: 40px;
+    }
+
+    &__item {
+        width: calc(calc(100% / 2) - var(--gap) / 2);
+        @media(min-width: 600px) {
+            width: calc(calc(100% / 3) - var(--gap) * 2 / 3);
+        }
+        @media(min-width: 900px) {
+            width: calc(calc(100% / 4) - var(--gap) * 3 / 4);
+        }
+        @media(min-width: 1200px) {
+            width: calc(calc(100% / 5) - var(--gap) * 4 / 5);
+        }
+    }
+}
