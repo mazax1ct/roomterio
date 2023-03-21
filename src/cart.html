@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>ROOMTERIO</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts.html
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="content">
+
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+                <li class="breadcrumbs__item">Корзина</li>
+            </ul>
+
+            <h1 class="text-center">Корзина</h1>
+
+            <div class="cart">
+                <div class="cart__list">
+                    <p class="h3">Товары</p>
+
+                    <div class="cart__products">
+                        <div class="cart__product" data-pid="108404" data-price="88442">
+                            <div class="cart__product-photo">
+                                <a href="#">
+                                    <img src="https://decorum-moscow.ru/upload/iblock/d71/d715c56a7979c66addf6f91e934c9d75.jpg" alt="Бра 1022-PN">
+                                </a>
+                            </div>
+                            <div class="cart__product-info">
+                                <p class="cart__product-title"><a href="/catalog/svet/bra/bra-1022-pn/">Бра 1022-PN</a></p>
+                                <p class="cart__product-brand">HUDSON VALLEY</p>
+                            </div>
+                            <div class="cart__product-count">
+                                <button class="add_btn del_amount" type="button" title="Уменьшить количество">–</button>
+                                <input type="text" value="1" readonly>
+                                <button class="add_btn add_amount" title="Увеличить количество">+</button>
+                            </div>
+                            <div class="cart__product-price-block">
+                                <p class="cart__product-old-price">99 442</p>
+                                <p class="cart__product-price">88 442</p>
+                            </div>
+                            <button class="cart__product-delete" type="button">Удалить</button>
+                        </div>
+                    </div>
+
+                    <div class="cart__total">
+                        <div id="cart_total_price">Итоговая сумма: <span data-total="88442">88 442</span> руб.</div>
+                    </div>
+                </div>
+
+                <div class="cart__form">
+                    <p class="h3 text-center">Оформить заказ</p>
+                    <form action="">
+                        <label class="input-label">
+                            <input class="input" type="text" placeholder="Ваше имя">
+                        </label>
+                        <label class="input-label error">
+                            <input class="input" type="text" placeholder="Ваше телефон">
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="text" placeholder="Ваше email">
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="terms">
+                            <span class="checkbox__icon"></span>
+                            <span>Я ознакомился с <a href="#" target="_blank">Политикой конфиденциальности</a> и даю свое согласие на обработку своих персональных данных.</span>
+                        </label>
+                        <p class="text-center">
+                            <button class="button button--type_2" type="button" disabled="">Отправить</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+
+</body>
+
+</html>
