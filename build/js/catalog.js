@@ -104,6 +104,16 @@ $(document).on('click', '.js-filter-closer', function () {
   return false;
 });
 
+$(document).on('click', '.catalog__filter.is-open', function (evt) {
+  if (!$('.filter').is(evt.target) && $('.filter').has(evt.target).length === 0) {
+    $('.filter').removeClass('is-open');
+    setTimeout(function() {
+      $('body').removeClass('overflow');
+      $('.catalog__filter').removeClass('is-open');
+    }, 400);
+  }
+});
+
 //открытие/закрытие ката в секции фильтра
 $(document).on('click', '.js-filter-section-cut', function () {
   var oldText = $(this).text();

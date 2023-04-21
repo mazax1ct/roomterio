@@ -1,6 +1,9 @@
 $(document).ready(function() {
   if($('.js-main-banner').length) {
     $('.js-main-banner').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
