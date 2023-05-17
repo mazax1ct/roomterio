@@ -36,6 +36,13 @@
         }
     }
 
+    h2 {
+        margin-bottom: 18px;
+        @media(min-width: $hd) {
+            font-size: 24px;
+        }
+    }
+
     &__goods-top {
         display: flex;
         flex-wrap: wrap;
@@ -355,6 +362,10 @@
     top: 24px;
     width: 40px;
     z-index: 1;
+    @media(min-width: $hd) {
+        left: 8px;
+        right: auto;
+    }
 
     svg {
         fill: #fff;
@@ -373,6 +384,10 @@
     transform: translateX(-100%);
     transition: transform 0.3s;
     width: 85%;
+    @media(min-width: $hd) {
+        margin-left: auto;
+        transform: translateX(100%);
+    }
 
     &.is-open {
         transform: translateX(0);
