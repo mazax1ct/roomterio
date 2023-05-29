@@ -31,16 +31,35 @@
         </div>
 
         <div class="header__right">
-            <a class="header-phone" href="tel:+79819157898">
-                <span class="header-phone__text">+7 (981) 915-78-98</span>
-                <svg class="header-phone__icon">
-                    <use xlink:href="#phone"></use>
-                </svg>
-            </a>
+            <div class="header__phone-block">
+                <a class="header-phone" href="tel:+79819157898">
+                    <span class="header-phone__text">+7 (981) 915-78-98</span>
+                    <svg class="header-phone__icon">
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                </a>
+                <button class="header__recall" type="button" data-fancybox="recall" data-src="#recall">Перезвоните мне</button>
+            </div>
 
-            <div class="header__work-time">
+
+            <!--<div class="header__work-time">
                 Пн-Пт: 09.00 - 19.00<br>
                 Сб-Вс: 10.00 - 19.00
+            </div>-->
+
+            <div class="header__socials">
+                <div class="socials">
+                    <a class="social" href="#" title="WhatsApp">
+                        <svg>
+                            <use xlink:href="#wa"></use>
+                        </svg>
+                    </a>
+                    <a class="social" href="#" title="Telegram">
+                        <svg>
+                            <use xlink:href="#tg"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
 
             <button class="js-search-opener header__icon-button" type="button" title="Поиск">
@@ -84,8 +103,8 @@
             <ul class="header-nav__list">
                 <li class="header-nav__category">
                     <a class="header-nav__category-link" aria-haspopup="true" href="#">
-                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_18.svg" alt="Гостиная"></div>
-                        Гостиная
+                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_659.svg" alt="Свет"></div>
+                        Свет
                     </a>
                     <div class="header-nav__subcategory">
                         <ul class="header-nav__subcategory-list">
@@ -226,8 +245,8 @@
                 </li>
                 <li class="header-nav__category">
                     <a class="header-nav__category-link" aria-haspopup="true" href="#">
-                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_21.svg" alt="Спальня"></div>
-                        Спальня
+                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_18.svg" alt="Мебель"></div>
+                        Мебель
                     </a>
                     <div class="header-nav__subcategory">
                         <ul class="header-nav__subcategory-list">
@@ -369,44 +388,26 @@
                 </li>
                 <li class="header-nav__category">
                     <a class="header-nav__category-link" href="#">
-                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_19.svg" alt="Кухня и столовая"></div>
-                        Кухня и столовая
+                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_24.svg" alt="Декор"></div>
+                        Декор
                     </a>
                 </li>
                 <li class="header-nav__category">
                     <a class="header-nav__category-link" href="#">
-                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_24.svg" alt="Домашний офис"></div>
-                        Домашний офис
+                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_24.svg" alt="Лепнина"></div>
+                        Лепнина
                     </a>
                 </li>
                 <li class="header-nav__category">
                     <a class="header-nav__category-link" href="#">
-                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_20.svg" alt="Прихожая"></div>
-                        Прихожая
+                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_762.svg" alt="Электроустановка"></div>
+                        Электроустановка
                     </a>
                 </li>
                 <li class="header-nav__category">
                     <a class="header-nav__category-link" href="#">
-                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_23.svg" alt="Детская"></div>
-                        Детская
-                    </a>
-                </li>
-                <li class="header-nav__category">
-                    <a class="header-nav__category-link" href="#">
-                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_762.svg" alt="Товары для дома"></div>
-                        Товары для дома
-                    </a>
-                </li>
-                <li class="header-nav__category">
-                    <a class="header-nav__category-link" href="#">
-                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_27.svg" alt="Дача"></div>
-                        Дача
-                    </a>
-                </li>
-                <li class="header-nav__category">
-                    <a class="header-nav__category-link" href="#">
-                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_659.svg" alt="Свет"></div>
-                        Свет
+                        <div class="header-nav__category-icon"><img src="images/icons/nav/nav_762.svg" alt="Панели стеновые"></div>
+                        Панели стеновые
                     </a>
                 </li>
                 <li class="header-nav__category actions">
@@ -416,9 +417,21 @@
                     </a>
                 </li>
                 <li class="header-nav__category all-goods">
-                    <a href="#" title="Весь каталог">
+                    <a class="header-nav__category-link" href="#" title="Весь каталог">
                         <svg>
                             <use xlink:href="#kebab"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-nav__category phone">
+                    <a class="header-nav__category-link" href="tel:+7 (981) 915-78-98">
+                        +7 (981) 915-78-98
+                    </a>
+                </li>
+                <li class="header-nav__category search">
+                    <a class="js-search-opener header-nav__category-link" href="" title="Поиск">
+                        <svg>
+                            <use xlink:href="#search"></use>
                         </svg>
                     </a>
                 </li>

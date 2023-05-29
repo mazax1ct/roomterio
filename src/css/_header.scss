@@ -48,6 +48,13 @@
                 transition: transform 0.2s, background-color 0.3s;
             }
         }
+
+        .header-nav__category.phone,
+        .header-nav__category.search {
+            @media(min-width: $md) {
+                display: block;
+            }
+        }
     }
 
     &:not(.scrolled) {
@@ -144,7 +151,6 @@
 
     &__menu-link {
         border-bottom: 1px dotted currentColor;
-        //color: rgba($text-color, 0.8);
         color: #fff;
         text-decoration: none;
         transition: border-color 0.3s;
@@ -161,6 +167,28 @@
         order: 3;
     }
 
+    &__phone-block {
+        margin-right: 10px;
+        text-align: center;
+        @media(min-width: $md) {
+            margin-right: 20px;
+        }
+    }
+
+    &__recall {
+        border: none;
+        background-color: transparent;
+        color: rgba($text-color, 0.8);
+        cursor: pointer;
+        text-decoration: underline;
+        @media(max-width: $sm - 1px) {
+            display: none;
+        }
+        @media(min-width: $md) {
+            color: #fff;
+        }
+    }
+
     &__work-time {
         color: rgba($text-color, 0.5);
         font-size: 10px;
@@ -175,6 +203,46 @@
         }
         @media(min-width: $hd) {
             margin-right: 15px;
+        }
+    }
+
+    &__socials {
+        margin-right: 10px;
+        @media(max-width: $sm - 1px) {
+            display: none;
+        }
+
+        .social {
+            svg {
+                @media(min-width: $md) {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+
+    &__social {
+        align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        text-decoration: none;
+        width: 40px;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+            @media(min-width: $md) and (max-width: $hd - 1px) {
+                margin-right: 5px;
+            }
+        }
+
+        svg {
+            fill: rgba($text-color, 0.8);
+            height: 24px;
+            width: 24px;
+            @media(min-width: $md) {
+                fill: #fff;
+            }
         }
     }
 
@@ -220,14 +288,40 @@
     }
 }
 
+.socials {
+    align-items: center;
+    display: flex;
+}
+
+.social {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    text-decoration: none;
+    width: 40px;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+        @media(min-width: $md) and (max-width: $hd - 1px) {
+            margin-right: 5px;
+        }
+    }
+
+    svg {
+        fill: rgba($text-color, 0.8);
+        height: 24px;
+        width: 24px;
+    }
+}
+
 .header-phone {
     color: rgba($text-color, 0.8);
-    margin-right: 10px;
+    display: flex;
     text-decoration: none;
     white-space: nowrap;
     @media(max-width: $sm - 1px) {
         align-items: center;
-        display: flex;
         flex-shrink: 0;
         justify-content: center;
         height: 40px;
@@ -236,7 +330,6 @@
     @media(min-width: $md) {
         color: #fff;
         font-size: 16px;
-        margin-right: 20px;
     }
     @media(min-width: $hd) {
         font-size: 18px;
@@ -413,36 +506,22 @@
             }
         }
 
-        &.actions {
-            /*a {
-                color: $dark-gold-color;
-            }*/
-        }
-
         &.all-goods {
             @media(max-width: $md - 1px) {
                 display: none;
             }
 
-            a {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-                padding: 14px;
-                /*&:hover {
-                    svg {
-                        fill: rgba($text-color, 0.7);
-                    }
-                }*/
-            }
-
             svg {
-                //fill: rgba($text-color, 0.8);
                 fill: #fff;
-                height: 16px;
+                height: 22px;
                 transition: fill 0.3s;
-                width: 16px;
+                width: 22px;
             }
+        }
+
+        &.phone,
+        &.search {
+            display: none;
         }
     }
 
@@ -455,9 +534,10 @@
         transition: opacity 0.3s;
         @media(min-width: $md) {
             color: #fff;
-            display: inline-block;
             font-size: 14px;
+            justify-content: center;
             padding: 6px;
+            text-align: center;
         }
         @media(min-width: $hd) {
             font-size: 16px;
@@ -468,8 +548,11 @@
             opacity: 0.7;
         }
 
-        a {
-            padding: 14px 6px;
+        svg {
+            display: block;
+            fill: #fff;
+            height: 24px;
+            width: 24px;
         }
     }
 

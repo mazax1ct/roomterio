@@ -39,11 +39,8 @@
             grid-template-columns: 260px 260px 260px;
         }
         @media(min-width: $hd) {
-            grid-template-columns: 210px 260px 240px 200px 210px;
+            grid-template-columns: 260px 260px 260px 260px;
             row-gap: 60px;
-        }
-        @media(min-width: $lg) {
-            grid-template-columns: 260px 260px 260px 210px 210px;
         }
     }
 
